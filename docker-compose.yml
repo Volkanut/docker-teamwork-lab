@@ -5,7 +5,7 @@ services:
     ports:
       - "8102:8080"
     healthcheck:
-      test: ["CMD", "wget", "-qO-", "http://localhost:8080/health"]
+      test: ["CMD", "wget", "-qO-", "http://localhost:8102/health"]
       interval: 5s
       timeout: 2s
       retries: 5
