@@ -8,7 +8,7 @@ func main() {
 	r := gin.Default()
 
 	r.GET("/", func(c *gin.Context) {
-		c.String(200, "Miguel sends greetings from Go!")
+		c.String(200, "Miguel Muñoz sends greetings from Go!")
 	})
 
 	r.GET("/health", func(c *gin.Context) {

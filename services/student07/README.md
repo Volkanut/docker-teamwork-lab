@@ -1,4 +1,4 @@
-Miguel Angel Muñoz Piñeros - 2274590
+Miguel Muñoz P. - 2274590
 
 # Go simple service
 
