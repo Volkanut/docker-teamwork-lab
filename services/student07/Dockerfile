@@ -22,7 +22,7 @@ WORKDIR /root/
 COPY --from=builder /app/server .
 
 # Exponemos el puerto
-EXPOSE 5009
+EXPOSE 8080
 
 # Ejecutamos el binario
 CMD ["./server"]
