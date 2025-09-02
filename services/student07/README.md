@@ -13,7 +13,7 @@ docker build -t go-simple-service .
 docker run --rm -p 8080:8080 go-simple-service
 
 curl http://localhost:8080/ # O usar simplemente el navegador
-# Respuesta: "Miguel sends greetings from Go!"
+# Respuesta: "Miguel Muñoz sends greetings from Go!"
 
 curl http://localhost:8080/health
 # Respuesta: "ok"
