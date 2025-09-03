@@ -49,3 +49,33 @@ services:
       interval: 5s
       timeout: 2s
       retries: 5
+  student06:
+    build: ./services/student06
+    container_name: student06
+    ports:
+      - "8106:8080"
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://localhost:8080/health"]
+      interval: 5s
+      timeout: 2s
+      retries: 5
+  student07:
+    build: ./services/student07
+    container_name: student07
+    ports:
+      - "8107:8080"
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://localhost:8080/health"]
+      interval: 5s
+      timeout: 2s
+      retries: 5
+  student09:
+    build: ./services/student09
+    container_name: student09
+    ports:
+      - "8109:8080"
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://localhost:8080/health"]
+      interval: 5s
+      timeout: 2s
+      retries: 5
