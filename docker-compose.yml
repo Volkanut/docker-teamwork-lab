@@ -40,8 +40,8 @@ services:
       timeout: 2s
       retries: 5
   student05:
-    build: ./services/student04
-    container_name: student04
+    build: ./services/student05
+    container_name: student05
     ports:
       - "8105:8080"
     healthcheck:
